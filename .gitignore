@@ -1,0 +1,25 @@
+# ROS 2 build and log artifacts
+build/
+install/
+log/
+
+# Python caching
+__pycache__/
+*.pyc
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Build helper files
+compile_commands.json
+.cache/
+
+# Operating system files
+.DS_Store
+Thumbs.db
