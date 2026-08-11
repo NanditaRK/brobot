@@ -1,0 +1,38 @@
+
+# gazebo pose to ros 2
+- topic_name: "/model/vehicle/pose"
+  ros_type_name: "geometry_msgs/msg/Pose"
+  gz_type_name: "gz.msgs.Pose"
+  direction: "GZ_TO_ROS"
+
+# gazebo clock to ros 2
+
+- ros_topic_name: "/clock"
+  gz_topic_name: "/clock"
+
+  ros_type_name: "rosgraph_msgs/msg/Clock"
+  gz_type_name: "gz.msgs.Clock"
+
+  direction: GZ_TO_ROS
+
+
+# ros 2 velocity to gazebo
+
+- ros_topic_name: "/cmd_vel"
+  gz_topic_name: "/model/brobot_car/cmd_vel"
+
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_type_name: "gz.msgs.Twist"
+
+  direction: ROS_TO_GZ
+
+
+# gazebo odometry to ros 2
+
+- ros_topic_name: "/odom"
+  gz_topic_name: "/model/brobot_car/odometry"
+
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+
+  direction: GZ_TO_ROS

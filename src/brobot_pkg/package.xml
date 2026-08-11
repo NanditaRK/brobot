@@ -3,13 +3,21 @@
 <package format="3">
   <name>brobot_pkg</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>ROS 2 package for the Brobot robot simulation.</description>
   <maintainer email="nrklinux@todo.todo">nrklinux</maintainer>
-  <license>TODO: License declaration</license>
+  <license>Apache-2.0</license>
 
+  <!-- dependencies -->
   <depend>rclpy</depend>
   <depend>std_msgs</depend>
 
+  <!-- executable dependencies (stuff required at runtime)-->
+  <exec_depend>ros_gz_sim</exec_depend> <!-- allows you to start and manage the Gazebo simulator and spawn entities from within a ROS 2 environment-->
+  <exec_depend>ros_gz_bridge</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  
+  <!-- test dependencies-->
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
