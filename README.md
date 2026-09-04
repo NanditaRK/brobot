@@ -1,5 +1,7 @@
 # Brobot
 
+<img width="1000" height="500" alt="Screenshot 2026-09-04 at 10 23 32 AM" src="https://github.com/user-attachments/assets/c1114056-2d93-487b-9d6a-86370993279e" />
+
 A project to mess around with ROS 2 and Gazebo simulations. 
 Learned how to put together launch files and use the ros_gz_sim and ros_gz_bridge packages.
 Also learned how plugins work with Gazebo.
